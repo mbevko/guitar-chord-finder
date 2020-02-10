@@ -1,0 +1,423 @@
+body {
+    background: black;
+  }
+
+  .chord_option_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .chord_option_list li {
+    color: silver;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 20pt;
+    cursor: pointer;
+  }
+
+  .chord_option_list li:hover {
+    color: white;
+  }
+
+  .chord_buttons_major {
+    position: fixed;
+    top: 0;
+    left: 200px;
+  }
+
+  .chord_buttons_major ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .chord_buttons_major_none {
+    display: none;
+  }
+
+  .chord_buttons_minor {
+    position: fixed;
+    top: 35px;
+    left:200px;
+  }
+
+  .chord_buttons_minor ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .chord_buttons_minor button {
+    width: 100px;
+  }
+
+  .chord_buttons_minor_none {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 14pt;
+    width: 100px;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .first_fret{
+    margin-top: 30px;
+  }
+  
+  div {
+    height: 100px;
+    width: 30px;
+  }
+  
+  .e_a_string {
+    border-left: solid white;
+    border-right: solid white;
+    border-top: solid white;
+  }
+  
+  .d_string {
+    border-right: solid white;
+    border-top: solid white;
+  }
+  
+  .g_string {
+    border-right: solid white;
+    border-top: solid white;
+  }
+  
+  .b_string {
+    border-right: solid white;
+    border-top: solid white;
+  }
+  
+  .e_string {
+    border-right: solid white;
+    border-top: solid white;
+  }
+  
+  .one {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: grey;
+    margin: -34px 0 0 83px;
+    transition: 2s;
+  }
+  
+  .two {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: grey;
+    margin: -34px 0 0 50px;
+    transition: 2s;
+  }
+  
+  .three {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: grey;
+    margin: -34px 0 0 16px;
+    transition: 2s;
+  }
+  
+  .four {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: grey;
+    margin: -34px 0 0 -16px;
+    transition: 2s;
+  }
+  
+  .five {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: grey;
+    margin: -34px 0 0 -49px;
+    transition: 2s;
+  }
+  
+  .six {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: grey;
+    margin: -34px 0 0 -82px;
+    transition: 2s;
+  }
+  
+  .a_b {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 140px 0 0 50px;
+    transition: 2s;
+  }
+  
+  .a_g {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 140px 0 0 16px;
+    transition: 2s;
+  }
+  
+  .a_d {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 140px 0 0 -16px;
+    transition: 2s;
+  }
+  
+  .c_b {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 35px 0 0 50px;
+    transition: 2s;
+  }
+  
+  .c_d {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 140px 0 0 -16px;
+    transition: 2s;
+  }
+  
+  .c_a {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: yellow;
+    margin: 240px 0 0 -49px;
+    transition: 2s;
+  }
+  
+  .d_e {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: orange;
+    margin: 140px 0 0 83px;
+    transition: 2s;
+  }
+  
+  .d_b {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 240px 0 0 50px;
+    transition: 2s;
+  }
+  
+  .d_g {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 140px 0 0 16px;
+    transition: 2s;
+  }
+  
+  .e_g {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 35px 0 0 16px;
+    transition: 2s;
+  }
+  
+  .e_d {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 140px 0 0 -16px;
+    transition: 2s;
+  }
+  
+  .e_a {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: yellow;
+    margin: 140px 0 0 -49px;
+    transition: 2s;
+  }
+  
+  .f_e {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: orange;
+    margin: 35px 0 0 83px;
+    transition: 2s;
+  }
+  
+  .f_b {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 35px 0 0 50px;
+    transition: 2s;
+  }
+  
+  .f_g {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 140px 0 0 16px;
+    transition: 2s;
+  }
+  
+  .f_d {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 140px 0 0 -16px;
+    transition: 2s;
+  }
+  
+  .g_e {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: orange;
+    margin: 240px 0 0 83px;
+    transition: 2s;
+  }
+  
+  .g_a {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: yellow;
+    margin: 140px 0 0 -49px;
+    transition: 2s;
+  }
+  
+  .g_elow {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: purple;
+    margin: 240px 0 0 -82px;
+    transition: 2s;
+  }
+  
+  .am_b{
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 35px 0 0 50px;
+    transition: 2s; 
+  }
+
+  .bm_e{
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: yellow;
+    margin: 35px 0 0 83px;
+    transition: 2s; 
+  }
+
+  .bm_b{
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 140px 0 0 50px;
+    transition: 2s; 
+  }
+  .bm_g{
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 35px 0 0 16px;
+    transition: 2s; 
+  }
+  
