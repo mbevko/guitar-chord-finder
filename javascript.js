@@ -56,26 +56,26 @@ reset.addEventListener('click', function () {
 
 aChord.addEventListener('click', function () {
   one.className = "one";
-  two.className = "a_b";
-  three.className = "a_g";
-  four.className = "a_d";
+  two.className = "b_2";
+  three.className = "g_2";
+  four.className = "d_2";
   five.className = "five";
   six.className = "six";
 });
 
 cChord.addEventListener('click', function () {
   one.className = "one";
-  two.className = "c_b";
+  two.className = "b_1";
   three.className = "three";
-  four.className = "c_d";
-  five.className = "c_a";
+  four.className = "d_2";
+  five.className = "a_3";
   six.className = "six";
 });
 
 dChord.addEventListener('click', function () {
-  one.className = "d_e";
-  two.className = "d_b";
-  three.className = "d_g";
+  one.className = "highe_2";
+  two.className = "b_3";
+  three.className = "g_2";
   four.className = "four";
   five.className = "five";
   six.className = "six";
@@ -84,44 +84,89 @@ dChord.addEventListener('click', function () {
 eChord.addEventListener('click', function () {
   one.className = "one";
   two.className = "two";
-  three.className = "e_g";
-  four.className = "e_d";
-  five.className = "e_a";
+  three.className = "g_1";
+  four.className = "d_2";
+  five.className = "a_2";
   six.className = "six";
 });
 
 fChord.addEventListener('click', function () {
-  one.className = "f_e";
-  two.className = "f_b";
-  three.className = "f_g";
-  four.className = "f_d";
-  five.className = "five";
+  one.className = "highe_1";
+  two.className = "b_1";
+  three.className = "g_2";
+  four.className = "d_3";
+  five.className = "a_3";
   six.className = "six";
 });
 
 gChord.addEventListener('click', function () {
-  one.className = "g_e";
+  one.className = "highe_3";
   two.className = "two";
   three.className = "three";
   four.className = "four";
-  five.className = "g_a";
-  six.className = "g_elow";
+  five.className = "a_2";
+  six.className = "e_3";
 });
 
 aMinor.addEventListener('click', function () {
   one.className = "one";
-  two.className = "am_b";
-  three.className = "a_g";
-  four.className = "a_d";
+  two.className = "b_1";
+  three.className = "g_2";
+  four.className = "d_2";
   five.className = "five";
   six.className = "six";
 });
 
 bMinor.addEventListener('click', function () {
-  one.className = "bm_e";
-  two.className = "bm_b";
-  three.className = "bm_g";
-  four.className = "bm_d";
-  five.className = "bm_a";
+  one.className = "highe_2";
+  two.className = "b_3";
+  three.className = "g_4";
+  four.className = "d_4";
+  five.className = "a_2";
   six.className = "six";
 });
+
+cMinor.addEventListener('click', function () {
+  one.className = "highe_3";
+  two.className = "b_4";
+  three.className = "g_5";
+  four.className = "d_5";
+  five.className = "five";
+  six.className = "e_3";
+}); 
+
+dMinor.addEventListener('click', function () {
+  one.className = "highe_1";
+  two.className = "b_3";
+  three.className = "g_2";
+  four.className = "four";
+  five.className = "five";
+  six.className = "six";
+});
+
+eMinor.addEventListener('click', function () {
+  one.className = "one";
+  two.className = "two";
+  three.className = "three";
+  four.className = "d_2";
+  five.className = "a_2";
+  six.className = "six";
+}); 
+
+fMinor.addEventListener('click', function () {
+  one.className = "highe_1";
+  two.className = "b_1";
+  three.className = "g_1";
+  four.className = "d_3";
+  five.className = "a_3";
+  six.className = "e_1";
+});
+
+gMinor.addEventListener('click', function () {
+  one.className = "highe_3";
+  two.className = "b_3";
+  three.className = "g_3";
+  four.className = "d_5";
+  five.className = "a_5";
+  six.className = "e_3";
+}); 
