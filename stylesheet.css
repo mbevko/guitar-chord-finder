@@ -168,41 +168,19 @@ body {
     margin: -34px 0 0 -82px;
     transition: 2s;
   }
-  
-  .a_b {
+
+  .highe_1 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
-    background-color: red;
-    margin: 140px 0 0 50px;
+    background-color: orange;
+    margin: 35px 0 0 83px;
     transition: 2s;
   }
-  
-  .a_g {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 140px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .a_d {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 140px 0 0 -16px;
-    transition: 2s;
-  }
-  
-  .c_b {
+
+  .b_1 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -212,30 +190,52 @@ body {
     margin: 35px 0 0 50px;
     transition: 2s;
   }
+
+  .g_1 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 35px 0 0 16px;
+    transition: 2s;
+  }
   
-  .c_d {
+  .d_1 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
     background-color: green;
-    margin: 140px 0 0 -16px;
+    margin: 35px 0 0 -16px;
     transition: 2s;
   }
-  
-  .c_a {
+
+  .a_1 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
     background-color: yellow;
-    margin: 240px 0 0 -49px;
+    margin: 35px 0 0 -49px;
+    transition: 2s;
+  }
+
+  .e_1 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: purple;
+    margin: 35px 0 0 -82px;
     transition: 2s;
   }
   
-  .d_e {
+  .highe_2 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -245,19 +245,19 @@ body {
     margin: 140px 0 0 83px;
     transition: 2s;
   }
-  
-  .d_b {
+
+  .b_2 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
     background-color: red;
-    margin: 240px 0 0 50px;
+    margin: 140px 0 0 50px;
     transition: 2s;
   }
-  
-  .d_g {
+
+  .g_2 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -268,18 +268,7 @@ body {
     transition: 2s;
   }
   
-  .e_g {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 35px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .e_d {
+  .d_2 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -289,8 +278,8 @@ body {
     margin: 140px 0 0 -16px;
     transition: 2s;
   }
-  
-  .e_a {
+
+  .a_2 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -300,52 +289,19 @@ body {
     margin: 140px 0 0 -49px;
     transition: 2s;
   }
-  
-  .f_e {
+
+  .e_2 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
-    background-color: orange;
-    margin: 35px 0 0 83px;
+    background-color: purple;
+    margin: 140px 0 0 -82px;
     transition: 2s;
   }
   
-  .f_b {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 35px 0 0 50px;
-    transition: 2s;
-  }
-  
-  .f_g {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 140px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .f_d {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 140px 0 0 -16px;
-    transition: 2s;
-  }
-  
-  .g_e {
+  .highe_3 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -355,19 +311,52 @@ body {
     margin: 240px 0 0 83px;
     transition: 2s;
   }
+
+  .b_3 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 240px 0 0 50px;
+    transition: 2s;
+  }
+
+  .g_3 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 240px 0 0 16px;
+    transition: 2s;
+  }
   
-  .g_a {
+  .d_3 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 240px 0 0 -16px;
+    transition: 2s;
+  }
+
+  .a_3 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
     background-color: yellow;
-    margin: 140px 0 0 -49px;
+    margin: 240px 0 0 -49px;
     transition: 2s;
   }
-  
-  .g_elow {
+
+  .e_3 {
     width: 28px;
     height: 28px;
     border: solid black;
@@ -377,47 +366,135 @@ body {
     margin: 240px 0 0 -82px;
     transition: 2s;
   }
-  
-  .am_b{
+
+  .highe_4 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: orange;
+    margin: 347px 0 0 83px;
+    transition: 2s;
+  }
+
+  .b_4 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
     background-color: red;
-    margin: 35px 0 0 50px;
-    transition: 2s; 
+    margin: 347px 0 0 50px;
+    transition: 2s;
   }
 
-  .bm_e{
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: yellow;
-    margin: 35px 0 0 83px;
-    transition: 2s; 
-  }
-
-  .bm_b{
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 140px 0 0 50px;
-    transition: 2s; 
-  }
-  .bm_g{
+  .g_4 {
     width: 28px;
     height: 28px;
     border: solid black;
     position: absolute;
     border-radius: 28px;
     background-color: blue;
-    margin: 35px 0 0 16px;
-    transition: 2s; 
+    margin: 347px 0 0 16px;
+    transition: 2s;
   }
   
+  .d_4 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 347px 0 0 -16px;
+    transition: 2s;
+  }
+
+  .a_4 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: yellow;
+    margin: 347px 0 0 -49px;
+    transition: 2s;
+  }
+
+  .e_4 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: purple;
+    margin: 347px 0 0 -82px;
+    transition: 2s;
+  }
+
+  .highe_5 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: orange;
+    margin: 447px 0 0 83px;
+    transition: 2s;
+  }
+
+  .b_5 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: red;
+    margin: 447px 0 0 50px;
+    transition: 2s;
+  }
+
+  .g_5 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: blue;
+    margin: 447px 0 0 16px;
+    transition: 2s;
+  }
+  
+  .d_5 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: green;
+    margin: 447px 0 0 -16px;
+    transition: 2s;
+  }
+
+  .a_5 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: yellow;
+    margin: 447px 0 0 -49px;
+    transition: 2s;
+  }
+
+  .e_5 {
+    width: 28px;
+    height: 28px;
+    border: solid black;
+    position: absolute;
+    border-radius: 28px;
+    background-color: purple;
+    margin: 447px 0 0 -82px;
+    transition: 2s;
+  }
