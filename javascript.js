@@ -22,6 +22,20 @@ chordOptionMinor.addEventListener('click', function () {
   }
 });
 
+let close = document.querySelector(".nav_exit_closed");
+let chordOptions = document.querySelector(".chord_options_closed");
+close.addEventListener('click', function () {
+  if(this.className === "nav_exit_closed"){
+    this.className = "nav_exit_open";
+    chordOptions.className = "chord_options_open";
+  }else {
+    this.className = "nav_exit_closed";
+    chordOptions.className = "chord_options_closed"
+    minorChordsNon.className = "chord_buttons_minor_none";
+    majorChordsNon.className = "chord_buttons_major_none";
+  }
+});
+
 let aChord = document.querySelector(".a_chord");
 let cChord = document.querySelector(".c_chord");
 let dChord = document.querySelector(".d_chord");
