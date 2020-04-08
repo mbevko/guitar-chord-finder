@@ -488,7 +488,7 @@ border-top: solid white;
 
 @media (max-width:600px) {
   .chord_display {
-    right: 20px;
+    right: 35px;
     font-size: 30pt;
   }
 }
