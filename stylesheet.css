@@ -475,3 +475,47 @@ border-top: solid white;
   background-color: purple;
   margin: 447px 0 0 -82px;
 }
+
+.mobile_message {
+  display: none;
+}
+
+@media (max-width:699px) {
+  .mobile_message {
+    display: flex;
+    flex-direction: column;
+    background: #2D2D2E;
+    opacity: .9;
+    z-index: 100;
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    right: 25px;
+    bottom: 15px;
+    padding: 20px;
+    align-items: flex-start;
+    border: solid white 1px;
+  }
+
+  .mobile_heading {
+    color: red;
+    font-family: sans-serif;
+    margin: 0 auto;
+  }
+
+  .p_one {
+    margin: 10px 50px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+  }
+
+  .p_two {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+  }
+
+
+}
