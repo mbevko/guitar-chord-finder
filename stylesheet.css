@@ -119,7 +119,7 @@ transform:rotate(360deg);
 }
 
 .minor_chords {
-  z-index: 1;
+  z-index: 10;
   margin-left: 120px;
   display: flex;
   justify-content: space-around;
@@ -127,7 +127,7 @@ transform:rotate(360deg);
 
 .a_minor {
   margin-left: 120px;
-  z-index: -1;
+  z-index: 5;
   transition: .5s;
 }
 
@@ -212,7 +212,7 @@ transform:rotate(360deg);
   margin-left: 120px;
   margin-top: 210px;
   z-index: -1;
-  ttransition: .5s;
+  transition: .5s;
 }
 
 .g_minor_clicked {
@@ -279,6 +279,7 @@ div {
 section div{
 border-right: solid white;
 border-top: solid white;
+z-index: -5;
 }
 
 .e_a_string {
@@ -292,6 +293,7 @@ border-top: solid white;
   position: absolute;
   border-radius: 28px;
   transition: 2s;
+  z-index: -2;
 }
 
 .one {
@@ -489,47 +491,10 @@ border-top: solid white;
 @media (max-width:600px) {
   .chord_display {
     right: 35px;
-    font-size: 30pt;
-  }
-}
-
-@media (max-width:10px) {
-  .mobile_message {
-    display: flex;
-    flex-direction: column;
-    background: #2D2D2E;
-    opacity: .9;
-    z-index: 100;
-    position: fixed;
-    top: 15px;
-    left: 25px;
-    right: 25px;
-    bottom: 15px;
-    padding: 20px;
-    align-items: flex-start;
-    border: solid white 1px;
+    font-size: 33pt;
   }
 
-  .mobile_heading {
-    color: red;
-    font-family: sans-serif;
-    margin: 0 auto;
-    text-align: center;
+  .reset {
+    width: 80px;
   }
-
-  .p_one {
-    margin: 10px 50px;
-    font-family: sans-serif;
-    text-align: center;
-    color: white;
-  }
-
-  .p_two {
-    font-family: sans-serif;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-  }
-
-
 }
