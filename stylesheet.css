@@ -478,8 +478,20 @@ z-index: -5;
   margin: 447px 0 0 -82px;
 }
 
-.mobile_message {
-  display: none;
+.devko_tm {
+  position: fixed;
+  color: grey;
+  font-size: 10pt;
+  display: flex;
+  flex-direction: column-reverse;
+  right: 10px;
+  align-items: center;
+  bottom: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.devko_logo {
+  width: 150px;
 }
 
 @media (max-width:830px) {
