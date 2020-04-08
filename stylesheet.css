@@ -490,6 +490,11 @@ z-index: -5;
   font-family: 'Lato', sans-serif;  
 }
 
+#devko_link {
+  text-decoration: none;
+  color: grey;
+}
+
 .devko_logo {
   width: 150px;
 }
