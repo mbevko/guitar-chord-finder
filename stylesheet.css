@@ -1,556 +1,477 @@
 body {
-    background: black;
-    margin-top: 100px;
-  }
+  background: black;
+  margin: 0;
+}
 
-  .chord_options_closed {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 20px;
-    background: grey;
-    transition: .3s;
-    z-index: 1;
-    overflow-x: hidden;
-    display: flex;
-  }
+.chord_display {
+  position: fixed;
+  top: 30%;
+  bottom: 70%;
+  right: 300px;
+  color: white;
+  font-size: 60pt;
+  margin: 0;
+}
 
-  .chord_options_open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    background: grey;
-    transition: .3s;
-    z-index: 1;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-  }
+.arrow {
+width: 20px;
+transition: .5s;
+transform:rotate(180deg);
+}
 
-  .nav_exit_open {
-    width: 30px;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    display: block;
-    left: 270px;
-    transition: .3s;
-    cursor: pointer;
-  }
+.arrow_down {
+width: 20px;
+transition: .5s;
+transform:rotate(360deg);
+}
 
-  .nav_exit_closed {
-    width: 30px;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    display: block;
-    right: -4px;
-    transition: .3s;
-    cursor: pointer;
-  }
+.arrow_two {
+width: 20px;
+transition: .5s;
+transform:rotate(180deg);
+}
 
-  .chord_option_list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
+.arrow_down_two {
+width: 20px;
+transition: .5s;
+transform:rotate(360deg);
+}
 
-  .chord_option_list li {
-    color: silver;
-    font-family: sans-serif;
-    font-size: 20pt;
-    cursor: pointer;
-    display: block;
-    align-self: space-around;
-  }
+.chord_display p {
+  display: inline;
+}
 
-  .chord_option_list li:hover {
-    color: white;
-  }
+.major_chords {
+  z-index: 30;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
 
-  .chord_buttons_major {
-    transition: 1s;
-  }
+.a_chord {
+  transition: .5s;
+}
 
-  .chord_buttons_major ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
+ .b_chord {
+  margin: 0;
+  transition: .5s;
+}
 
-  .chord_buttons_major_none {
-    display: none;
-  }
+.c_chord {
+  margin: 0;
+  transition: .5s;
+}
 
-  .chord_buttons_minor {
-    transition: 1s;
-  }
+.d_chord {
+  margin: 0;
+  transition: .5s;
+}
 
-  .chord_buttons_minor ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
+.e_chord {
+  margin: 0;
+  transition: .5s;
+}
 
-  .chord_buttons_minor button {
-    width: 100px;
-  }
+.f_chord {
+  margin: 0;
+  transition: .5s;
+}
 
-  .chord_buttons_minor_none {
-    display: none;
-  }
+.g_chord {
+  margin: 0;
+  transition: .5s;
+  z-index: -1;
+}
 
-  .reset {
-    color: red;
-  }
-  
-  button {
-    cursor: pointer;
-    font-size: 14pt;
-    width: 100px;
-  }
-  .first_fret {
-    margin-top: 50px;
-  }
+.a_chord_clicked {
+  margin-top: 35px;
+  transition: .5s;
+}
 
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  
-  .first_fret {
-    margin-top: 30px;
-  }
-  
-  div {
-    height: 100px;
-    width: 30px;
-  }
-  
-  .e_a_string {
-    border-left: solid white;
-    border-right: solid white;
-    border-top: solid white;
-  }
-  
-  .d_string {
-    border-right: solid white;
-    border-top: solid white;
-  }
-  
-  .g_string {
-    border-right: solid white;
-    border-top: solid white;
-  }
-  
-  .b_string {
-    border-right: solid white;
-    border-top: solid white;
-  }
-  
-  .e_string {
-    border-right: solid white;
-    border-top: solid white;
-  }
-  
-  .one {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: grey;
-    margin: -34px 0 0 83px;
-    transition: 2s;
-  }
-  
-  .two {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: grey;
-    margin: -34px 0 0 50px;
-    transition: 2s;
-  }
-  
-  .three {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: grey;
-    margin: -34px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .four {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: grey;
-    margin: -34px 0 0 -16px;
-    transition: 2s;
-  }
-  
-  .five {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: grey;
-    margin: -34px 0 0 -49px;
-    transition: 2s;
-  }
-  
-  .six {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: grey;
-    margin: -34px 0 0 -82px;
-    transition: 2s;
-  }
+.b_chord_clicked {
+  margin-top: 70px;
+  transition: .5s;
+}
 
-  .highe_1 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: orange;
-    margin: 35px 0 0 83px;
-    transition: 2s;
-  }
+.c_chord_clicked {
+  margin-top: 105px;
+  transition: .5s;
+}
 
-  .b_1 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 35px 0 0 50px;
-    transition: 2s;
-  }
+.d_chord_clicked {
+  margin-top: 140px;
+  transition: .5s;
+}
 
-  .g_1 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 35px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .d_1 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 35px 0 0 -16px;
-    transition: 2s;
-  }
+.e_chord_clicked {
+  margin-top: 175px;
+  transition: .5s;
+}
 
-  .a_1 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: yellow;
-    margin: 35px 0 0 -49px;
-    transition: 2s;
-  }
+.f_chord_clicked {
+  margin-top: 210px;
+  transition: .5s;
+}
 
-  .e_1 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: purple;
-    margin: 35px 0 0 -82px;
-    transition: 2s;
-  }
-  
-  .highe_2 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: orange;
-    margin: 140px 0 0 83px;
-    transition: 2s;
-  }
+.g_chord_clicked {
+  margin-top: 245px;
+  transition: .5s;
+}
 
-  .b_2 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 140px 0 0 50px;
-    transition: 2s;
-  }
+.minor_chords {
+  z-index: 1;
+  margin-left: 120px;
+  display: flex;
+  justify-content: space-around;
+}
 
-  .g_2 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 140px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .d_2 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 140px 0 0 -16px;
-    transition: 2s;
-  }
+.a_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .a_2 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: yellow;
-    margin: 140px 0 0 -49px;
-    transition: 2s;
-  }
+.b_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .e_2 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: purple;
-    margin: 140px 0 0 -82px;
-    transition: 2s;
-  }
-  
-  .highe_3 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: orange;
-    margin: 240px 0 0 83px;
-    transition: 2s;
-  }
+.b_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .b_3 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 240px 0 0 50px;
-    transition: 2s;
-  }
+.c_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .g_3 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 240px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .d_3 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 240px 0 0 -16px;
-    transition: 2s;
-  }
+.d_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .a_3 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: yellow;
-    margin: 240px 0 0 -49px;
-    transition: 2s;
-  }
+.e_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .e_3 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: purple;
-    margin: 240px 0 0 -82px;
-    transition: 2s;
-  }
+.f_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .highe_4 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: orange;
-    margin: 347px 0 0 83px;
-    transition: 2s;
-  }
+.g_minor {
+  margin-left: 120px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .b_4 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 347px 0 0 50px;
-    transition: 2s;
-  }
+.a_minor_clicked {
+  margin-left: 120px;
+  margin-top: 35px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .g_4 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 347px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .d_4 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 347px 0 0 -16px;
-    transition: 2s;
-  }
+.b_minor_clicked {
+  margin-left: 120px;
+  margin-top: 70px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .a_4 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: yellow;
-    margin: 347px 0 0 -49px;
-    transition: 2s;
-  }
+.c_minor_clicked {
+  margin-left: 120px;
+  margin-top: 105px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .e_4 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: purple;
-    margin: 347px 0 0 -82px;
-    transition: 2s;
-  }
+.d_minor_clicked {
+  margin-left: 120px;
+  margin-top: 140px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .highe_5 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: orange;
-    margin: 447px 0 0 83px;
-    transition: 2s;
-  }
+.e_minor_clicked {
+  margin-left: 120px;
+  margin-top: 175px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .b_5 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: red;
-    margin: 447px 0 0 50px;
-    transition: 2s;
-  }
+.f_minor_clicked {
+  margin-left: 120px;
+  margin-top: 210px;
+  z-index: -1;
+  ttransition: .5s;
+}
 
-  .g_5 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: blue;
-    margin: 447px 0 0 16px;
-    transition: 2s;
-  }
-  
-  .d_5 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: green;
-    margin: 447px 0 0 -16px;
-    transition: 2s;
-  }
+.g_minor_clicked {
+  margin-left: 120px;
+  margin-top: 245px;
+  z-index: -1;
+  transition: .5s;
+}
 
-  .a_5 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: yellow;
-    margin: 447px 0 0 -49px;
-    transition: 2s;
-  }
 
-  .e_5 {
-    width: 28px;
-    height: 28px;
-    border: solid black;
-    position: absolute;
-    border-radius: 28px;
-    background-color: purple;
-    margin: 447px 0 0 -82px;
-    transition: 2s;
-  }
+.major_option_list {
+  position: fixed;
+  top:0;
+}
+
+.minor_option_list {
+  position: fixed;
+  top:0;
+}
+
+.reset {
+  color: red;
+  margin-left: 280px;
+  position: fixed;
+  top: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  font-size: 12pt;
+  cursor: pointer;
+  border-radius: 18px;
+  color: silver;
+  background: linear-gradient(#30374A, black);
+  border: solid #30374A .5px;
+}
+
+button:hover {
+background: linear-gradient(black, #30374A);
+}
+
+ section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.first_fret {
+  margin-top: 80px;
+}
+
+div {
+  height: 100px;
+  width: 30px;
+}
+
+section div{
+border-right: solid white;
+border-top: solid white;
+}
+
+.e_a_string {
+  border-left: solid white;
+}
+
+#fing_place_cont {
+  width: 28px;
+  height: 28px;
+  border: solid black;
+  position: absolute;
+  border-radius: 28px;
+  transition: 2s;
+}
+
+.one {
+  margin: -34px 0 0 83px;
+  transition: 2s;
+  background-color: grey;
+}
+
+.two {
+  margin: -34px 0 0 50px;
+  background-color: grey;
+}
+
+.three {
+  margin: -34px 0 0 16px;
+  background-color: grey;
+}
+
+.four {
+  margin: -34px 0 0 -16px;
+  background-color: grey;
+}
+
+.five {
+  margin: -34px 0 0 -49px;
+  background-color: grey;
+}
+
+.six {
+  margin: -34px 0 0 -82px;
+  background-color: grey;
+}
+
+.highe_1 {
+  background-color: orange;
+  margin: 35px 0 0 83px;
+}
+
+.b_1 {
+  background-color: red;
+  margin: 35px 0 0 50px;
+}
+
+.g_1 {
+  background-color: blue;
+  margin: 35px 0 0 16px;
+}
+
+.d_1 {
+  background-color: green;
+  margin: 35px 0 0 -16px;
+}
+
+.a_1 {
+  background-color: yellow;
+  margin: 35px 0 0 -49px;
+}
+
+.e_1 {
+  background-color: purple;
+  margin: 35px 0 0 -82px;
+}
+
+.highe_2 {
+  background-color: orange;
+  margin: 140px 0 0 83px;
+}
+
+.b_2 {
+  background-color: red;
+  margin: 140px 0 0 50px;
+}
+
+.g_2 {
+  background-color: blue;
+  margin: 140px 0 0 16px;
+}
+
+.d_2 {
+  background-color: green;
+  margin: 140px 0 0 -16px;
+}
+
+.a_2 {
+  background-color: yellow;
+  margin: 140px 0 0 -49px;
+}
+
+.e_2 {
+  background-color: purple;
+  margin: 140px 0 0 -82px;
+}
+
+.highe_3 {
+  background-color: orange;
+  margin: 240px 0 0 83px;
+}
+
+.b_3 {
+  background-color: red;
+  margin: 240px 0 0 50px;
+}
+
+.g_3 {
+  border-radius: 28px;
+  background-color: blue;
+  margin: 240px 0 0 16px;
+}
+
+.d_3 {
+  background-color: green;
+  margin: 240px 0 0 -16px;
+}
+
+.a_3 {
+  background-color: yellow;
+  margin: 240px 0 0 -49px;
+}
+
+.e_3 {
+  background-color: purple;
+  margin: 240px 0 0 -82px;
+}
+
+.highe_4 {
+  background-color: orange;
+  margin: 347px 0 0 83px;
+}
+
+.b_4 {
+  background-color: red;
+  margin: 347px 0 0 50px;
+}
+
+.g_4 {
+  background-color: blue;
+  margin: 347px 0 0 16px;
+}
+
+.d_4 {
+  background-color: green;
+  margin: 347px 0 0 -16px;
+}
+
+.a_4 {
+  background-color: yellow;
+  margin: 347px 0 0 -49px;
+}
+
+.e_4 {
+  background-color: purple;
+  margin: 347px 0 0 -82px;
+}
+
+.highe_5 {
+  background-color: orange;
+  margin: 447px 0 0 83px;
+}
+
+.b_5 {
+  background-color: red;
+  margin: 447px 0 0 50px;
+}
+
+.g_5 {
+  background-color: blue;
+  margin: 447px 0 0 16px;
+}
+
+.d_5 {
+  background-color: green;
+  margin: 447px 0 0 -16px;
+}
+
+.a_5 {
+  background-color: yellow;
+  margin: 447px 0 0 -49px;
+}
+
+.e_5 {
+  background-color: purple;
+  margin: 447px 0 0 -82px;
+}

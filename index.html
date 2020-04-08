@@ -4,52 +4,47 @@
         <title>Guitar Chords</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav class="chord_options_closed">
-          <ul class="chord_option_list">
-            <li class="chord_option_major"> Major Chords</li>
-            <li class="chord_option_minor">Minor Chords</li>
-          </ul>
-          <img src="https://image.flaticon.com/icons/svg/527/527473.svg" class="nav_exit_closed">
-          <article class="chord_buttons_major_none">
-            <ul>
+        <nav>
+          <ul class="major_option_list">
+            <li><button class="major_chords">Major<img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png"  class="arrow"></button></li>
             <li><button class="a_chord">A Major</button></li>
+            <li><button class="b_chord">B Major</button></li>
             <li><button class="c_chord">C Major</button></li>
             <li><button class="d_chord">D Major</button></li>
             <li><button class="e_chord">E Major</button></li>
             <li><button class="f_chord">F Major</button></li>
             <li><button class="g_chord">G Major</button></li>
-            <li><button class="reset">Reset</button></li>
-            </ul>
-          </article>
-          <article class="chord_buttons_minor_none">
-            <ul>
-            <li><button class="a_minor">A Minor</button></li>
-            <li><button class="b_minor">B Minor</button></li>
-            <li><button class="c_minor">C Minor</button></li>
-            <li><button class="d_minor">D Minor</button></li>
-            <li><button class="e_minor">E Minor</button></li>
-            <li><button class="f_minor">F Minor</button></li>
-            <li><button class="g_minor">G Minor</button></li>
-            <li><button class="reset">Reset</button></li>
-            </ul>
-          </article>
+          </ul>
+          <ul id="minor" class="minor_option_list">
+            <li><button class="minor_chords">Minor <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png" class="arrow_two" ></button></li>
+            <li><button id="minor" class="a_minor">A Minor</button></li>
+            <li><button id="minor" class="b_minor">B Minor</button></li>
+            <li><button id="minor" class="c_minor">C Minor</button></li>
+            <li><button id="minor" class="d_minor">D Minor</button></li>
+            <li><button id="minor" class="e_minor">E Minor</button></li>
+            <li><button id="minor" class="f_minor">F Minor</button></li>
+            <li><button id="minor" class="g_minor">G Minor</button></li>
+          </ul>
+          <button class="reset">Reset</button>
         </nav>
-
+      
+      <div class="chord_display"></div>
             
             <section class="first_fret">
-              <span class="one">
+              <span id="fing_place_cont" class="one">
               </span>
-              <span class="two">
+              <span id="fing_place_cont" class="two">
               </span>
-              <span class="three">
+              <span id="fing_place_cont" class="three">
               </span> 
-              <span class="four">
+              <span id="fing_place_cont" class="four">
               </span> 
-              <span class="five">
+              <span id="fing_place_cont" class="five">
               </span> 
-              <span class="six">
+              <span id="fing_place_cont" class="six">
               </span> 
               <div class="e_a_string">
               </div>

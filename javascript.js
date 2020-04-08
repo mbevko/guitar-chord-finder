@@ -1,42 +1,6 @@
-let chordOptionMajor = document.querySelector(".chord_option_major");
-let majorChords = document.querySelector(".chord_buttons_major");
-let majorChordsNon = document.querySelector(".chord_buttons_major_none")
-
-chordOptionMajor.addEventListener('click', function () {
-  if(majorChordsNon.className === "chord_buttons_major_none"){
-    majorChordsNon.className = "chord_buttons_major";
-  }else{
-    majorChordsNon.className = "chord_buttons_major_none";
-  }
-});
-
-let chordOptionMinor = document.querySelector(".chord_option_minor");
-let minorChords = document.querySelector(".chord_buttons_minor");
-let minorChordsNon = document.querySelector(".chord_buttons_minor_none")
-
-chordOptionMinor.addEventListener('click', function () {
-  if(minorChordsNon.className === "chord_buttons_minor_none"){
-    minorChordsNon.className = "chord_buttons_minor";
-  }else{
-    minorChordsNon.className = "chord_buttons_minor_none";
-  }
-});
-
-let close = document.querySelector(".nav_exit_closed");
-let chordOptions = document.querySelector(".chord_options_closed");
-close.addEventListener('click', function () {
-  if(this.className === "nav_exit_closed"){
-    this.className = "nav_exit_open";
-    chordOptions.className = "chord_options_open";
-  }else {
-    this.className = "nav_exit_closed";
-    chordOptions.className = "chord_options_closed"
-    minorChordsNon.className = "chord_buttons_minor_none";
-    majorChordsNon.className = "chord_buttons_major_none";
-  }
-});
 
 let aChord = document.querySelector(".a_chord");
+let bChord = document.querySelector(".b_chord");
 let cChord = document.querySelector(".c_chord");
 let dChord = document.querySelector(".d_chord");
 let eChord = document.querySelector(".e_chord");
@@ -59,7 +23,36 @@ let four = document.querySelector(".four");
 let five = document.querySelector(".five");
 let six = document.querySelector(".six");
 
+let majorButton = document.querySelector(".major_chords");
+let minorButton = document.querySelector(".minor_chords");
+let arrow = document.querySelector(".arrow");
+let arrowTwo = document.querySelector(".arrow_two");
+
+majorButton.addEventListener('click', function() {
+  aChord.classList.toggle("a_chord_clicked");
+  bChord.classList.toggle("b_chord_clicked");
+  cChord.classList.toggle("c_chord_clicked");
+  dChord.classList.toggle("d_chord_clicked");
+  eChord.classList.toggle("e_chord_clicked");
+  fChord.classList.toggle("f_chord_clicked");
+  gChord.classList.toggle("g_chord_clicked");
+  arrow.classList.toggle("arrow_down");
+}); 
+
+minorButton.addEventListener('click', function() {
+  aMinor.classList.toggle("a_minor_clicked");
+  bMinor.classList.toggle("b_minor_clicked");
+  cMinor.classList.toggle("c_minor_clicked");
+  dMinor.classList.toggle("d_minor_clicked");
+  eMinor.classList.toggle("e_minor_clicked");
+  fMinor.classList.toggle("f_minor_clicked");
+  gMinor.classList.toggle("g_minor_clicked");
+  arrowTwo.classList.toggle("arrow_down_two");
+}); 
+
+
 reset.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = " ";
   one.className = "one";
   two.className = "two";
   three.className = "three";
@@ -69,6 +62,7 @@ reset.addEventListener('click', function () {
 });
 
 aChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "A";
   one.className = "one";
   two.className = "b_2";
   three.className = "g_2";
@@ -77,7 +71,18 @@ aChord.addEventListener('click', function () {
   six.className = "six";
 });
 
+bChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "B";
+  one.className = "highe_1";
+  two.className = "b_2";
+  three.className = "g_2";
+  four.className = "d_2";
+  five.className = "a_1";
+  six.className = "six";
+});
+
 cChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "C";
   one.className = "one";
   two.className = "b_1";
   three.className = "three";
@@ -87,6 +92,7 @@ cChord.addEventListener('click', function () {
 });
 
 dChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "D";
   one.className = "highe_2";
   two.className = "b_3";
   three.className = "g_2";
@@ -96,6 +102,7 @@ dChord.addEventListener('click', function () {
 });
 
 eChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "E";
   one.className = "one";
   two.className = "two";
   three.className = "g_1";
@@ -105,6 +112,7 @@ eChord.addEventListener('click', function () {
 });
 
 fChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "F";
   one.className = "highe_1";
   two.className = "b_1";
   three.className = "g_2";
@@ -114,6 +122,7 @@ fChord.addEventListener('click', function () {
 });
 
 gChord.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "G";
   one.className = "highe_3";
   two.className = "two";
   three.className = "three";
@@ -123,6 +132,7 @@ gChord.addEventListener('click', function () {
 });
 
 aMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Am";
   one.className = "one";
   two.className = "b_1";
   three.className = "g_2";
@@ -132,6 +142,7 @@ aMinor.addEventListener('click', function () {
 });
 
 bMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Bm";
   one.className = "highe_2";
   two.className = "b_3";
   three.className = "g_4";
@@ -141,15 +152,17 @@ bMinor.addEventListener('click', function () {
 });
 
 cMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Cm";
   one.className = "highe_3";
   two.className = "b_4";
   three.className = "g_5";
   four.className = "d_5";
-  five.className = "five";
+  five.className = "a_3";
   six.className = "e_3";
 }); 
 
 dMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Dm";
   one.className = "highe_1";
   two.className = "b_3";
   three.className = "g_2";
@@ -159,6 +172,7 @@ dMinor.addEventListener('click', function () {
 });
 
 eMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Em";
   one.className = "one";
   two.className = "two";
   three.className = "three";
@@ -168,6 +182,7 @@ eMinor.addEventListener('click', function () {
 }); 
 
 fMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Fm";
   one.className = "highe_1";
   two.className = "b_1";
   three.className = "g_1";
@@ -177,6 +192,7 @@ fMinor.addEventListener('click', function () {
 });
 
 gMinor.addEventListener('click', function () {
+  document.querySelector(".chord_display").innerText = "Gm";
   one.className = "highe_3";
   two.className = "b_3";
   three.className = "g_3";
