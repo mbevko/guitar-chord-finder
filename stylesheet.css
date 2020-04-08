@@ -510,7 +510,16 @@ z-index: -5;
     width: 80px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .devko_logo {
     display: none;
+  }
+
+  .devko_link {
+    text-decoration: none;
+    color: grey;
   }
 }
