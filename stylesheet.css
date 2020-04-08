@@ -480,6 +480,12 @@ border-top: solid white;
   display: none;
 }
 
+@media (max-width:820px) {
+  .chord_display {
+    right: 150px;
+  }
+}
+
 @media (max-width:699px) {
   .mobile_message {
     display: flex;
